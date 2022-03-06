@@ -1,0 +1,38 @@
+Lab 3 - Edit and Delete
+
+In this lab you will:
+
+- Populate an HTML table from your database
+- Add an Edit link to each row of your HTML table
+- Build a page that displays the selected club information in an HTML form
+- Build a page that saves any changes made to a club to the database, then returns the user back to the updated HTML table
+- Add a Delete link to each row of your HTML table
+- Add a JavaScript confirmation to each Delete link
+- Build a page that proceses the Deletion of a selected record and returns the user back to the updated HTML table
+
+To complete the lab:
+
+- Run the following SQL in your database:
+
+CREATE TABLE clubs (
+clubId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+clubName VARCHAR(50) NOT NULL,
+ground VARCHAR(50) NOT NULL);
+
+INSERT INTO clubs (clubName, ground)
+VALUES 
+('Arsenal', 'Emirates Stadium'),
+('Chelsea', 'Stamford Bridge'),
+('Everton', 'Goodison Park'),
+('Liverpool', 'Anfield'),
+('Manchester City', 'The Etihad'),
+('Manchester United', 'Old Trafford'),
+('Tottenham Hotspur', 'White Hart Lane');
+
+- Build a PHP page that shows all the columns of your table in an HTML table
+- Add the Edit links
+- Build functioning Edit / Save Update pages that then redirects back to your list of clubs
+- Add the Delete links w/JavaScript confirmations
+- Build a functioning Delete page that then redirects back to your list of clubs
+- Create a comp1006-lab3 private repository on github and push your files to the repository.  Add me - ifotn - as a collaborator to the repo.  Create a README.md file that describes the lab and includes a link to the live web site.
+- Submit the links to a) your GitHub repo and b) the live page that shows the list of clubs on Blackboard/D2L.

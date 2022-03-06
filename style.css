@@ -1,0 +1,78 @@
+html{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+}
+html::-webkit-scrollbar{
+  display: none;
+}
+
+*{
+  color: #ffff
+}
+
+body#home {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+  /* color: #ffff; */
+}
+
+.container {
+  width: 90vw;
+  height: auto;
+  margin: 0;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table {
+  color: #ffff;
+}
+
+button a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/*--------Pop Up styles----------*/
+
+#pop-up-edit {
+    background-color: #198754;
+}
+
+#pop-up-delete{
+  background-color: #dc3545;
+}
+#pop-up-add{
+  background-color: #0d6efd;
+}
+
+
+#pop-up-edit, #pop-up-delete, #pop-up-add {
+  height: 50vh;
+  width: 35vw;
+  margin: auto;
+  position: absolute;
+  visibility: hidden;
+}
+
+#pop-up-edit > div {
+  width: 20vw;
+}
+
+#clubId{
+  display: none;
+  visibility: hidden;
+}
